@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title> EngNet Consultoria </title>
+    <script src="js/index.js" defer></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="imagens/icons8-fox-48.ico" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div>
+                <button id="home" onclick="showHome()"></button>
+                <img src="imagens/logo laranja engnet.png" class="logoEngnet" alt="logo Engnet">
+            </div>
+            <div>
+                <h1>Plataforma de localidades da EngNet</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div>
+                <h2>Selecione uma UF</h2>
+            </div>
+            <div>
+                <select id="selecaoUF">
+                    <option value="">Selecione uma UF</option>
+                </select>
+            </div>
+            <section class="municipiosTabela">
+                <div class="municipios" id="municipios1"></div>
+                <div class="municipios" id="municipios2"></div>
+                <div class="municipios" id="municipios3"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

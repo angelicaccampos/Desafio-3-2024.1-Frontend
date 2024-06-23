@@ -1,0 +1,238 @@
+body {
+    font-family: 'Montserrat', Arial;
+    color: #FF731A;
+    background-color: #FFFFFF;
+}
+
+header {
+    font-size: 12px;
+    position: relative;
+}
+
+#home {
+    z-index: 1;
+    position: absolute;
+    border: solid 4px #FF731A;
+    border-radius: 4px;
+    width: 85px;
+    height: 92px;
+    background-color: transparent;
+    left: 43px;
+    top: 0px;
+}
+
+.cabecalho {
+    padding: 5px 10px;
+    width: 1120px;
+    height: 75px;
+    margin-left: 43px;
+    margin-top: 20px;
+    border: 4px solid #FF731A;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.logoEngnet {
+    padding: 7px 0px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#selecaoUF {
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+main h2 {
+    font-size: 38px;
+}
+
+.municipiosTabela {
+    display: grid; /* Define como grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Cria três colunas de tamanho igual */
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #FF731A;
+    max-width: 900px;
+    overflow-y: scroll; /* Para a barra de rolagem*/
+    width: 100%;
+    height: 400px;
+    font-size: 22px;
+}
+
+.municipios {
+    color: #000;
+    padding: 15px;
+    text-align: center;
+} 
+
+#municipios1{
+    border: 1px solid #FF731A;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 0px;
+}
+
+#municipios3 {
+    border: 1px solid #FF731A;
+    border-top: 0px ;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 0px;
+}
+
+.municipios div {
+    padding: 10px;
+}
+
+/* scrollbar */
+.municipiosTabela::-webkit-scrollbar {
+    width: 12px;
+}
+
+.municipiosTabela::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.municipiosTabela::-webkit-scrollbar-thumb {
+    background-color: #FF731A;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .cabecalho {
+        width: 90%;
+    }
+
+    .logoEngnet {
+        left: 6%;
+        top: 10%;
+    }
+
+    #selecaoUF {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    #home {
+        width: 9%;
+        height: 100%;
+        left: 45px;
+    }
+
+    .municipiosTabela {
+        max-width: 900px;
+        max-height: 500px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        width: 90%;
+    }
+
+    #home {
+        width: 9.2%;
+        left: 45px;
+    }
+
+    .logoEngnet {
+        width: 50px;
+        height: 50px;
+        left: 55px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .municipiosTabela {
+        max-width: 90%;
+        height: 100%;
+    }
+
+    .municipios {
+        height: 100%;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        width: 90%;
+        height: 90px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    main h2 {
+        font-size: 50px;
+    }
+
+    #home {
+        width: 9.2%;
+        left: 45px;
+    }
+
+    #selecaoUF {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .municipios {
+        height: 100%;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .municipiosTabela {
+        height: 1100px;
+        max-height: 1000px;
+        width: 92%;        
+    }
+
+    .municipios div{
+        padding: 8%;
+        width: 55%;
+        font-size: 30px;
+    }
+}
